@@ -6,7 +6,7 @@
 }
 
 .nav-bar {
-    background: green
+    background: yellow;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -25,17 +25,11 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-    background: blueviolet;
+    background: yellow;
 }
 
 #logo {
-    background-color: green;
-    background-image: linear-gradient(to top, blue 0%, green 100%);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -209,52 +203,38 @@
     }
 
     .main-container {
-        display: grid;
+        display: flex;
         align-items: center;
-        grid-template-columns: 1fr 1fr;
-        justify-self: center;
-        margin: 0 auto;
-        height: 90vh;
+        justify-content: space-around;
         background-color: teal;
+        margin: 0 auto;
+        height: 100vh;
         z-index: 1;
         width: 100%
     }
 
     .main-container h1 {
-        font-size: 4rem;
-        background-color: white;
-        background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-    }
-
-    .main-content {
-        width: 100%;
+        font-size: 6rem;
     }
 
     .main-container h2 {
         font-size: 2rem;
-        background-color: white;
+        color: white;
         background-size: 100%;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
     }
 
     .main-content p {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
 
     .sec-button {
+        margin-top: 4vh;
         font-size: 1rem;
-        padding: 14px 32px;
+        padding: 10px 30px;
         border: none;
-        border-radius: 4px;
+        border-radius: 20px;
         cursor: pointer;
         position: relative;
         transition: all 0.3s;
@@ -284,26 +264,22 @@
     }
 
     #main-img {
-        height: 80%;
-        width: 80%;
+        height: 60vh;
     }
 
     /* mobile */
 
     @media screen and (max-width: 768px) {
         .main-container {
-            display: grid;
-            grid-template-columns: auto;
+            display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-self: center;
-            width: 100%;
             margin: 0 auto;
             height: 90vh;
         }
 
         .main-content {
-            margin-bottom: 4rem;
-            text-align: center;
+            margin-bottom: 1vh;
         }
 
         .main-content h1{
@@ -322,6 +298,10 @@
 
         .main-img-container {
             text-align: center;
+        }
+
+        #main-img {
+            height: 300px;
         }
     }
 
@@ -347,42 +327,38 @@
 }
 
 /* services */ 
-
 .services {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    background-color: tomato;
+    margin: 0;
+    text-align: center;
 }
-
 .services h1 {
-    background-color: yellow;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    font-size: 4rem;
 }
 
-.services-container {
+.services p {
+    font-size: 1.5em;
+    color: white;
+}
+
+.row {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    background-color: tomato;
 }
 
-.services-card {
-    margin: 1rem;
+.service-card {
+    padding: 40px;
+    text-align: center;
+}
+.service-card img {
+    width: 300px;
     height: 500px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%
-        ),
-        url('/images/xps-1.jpg');
-    background-size: cover;
-    position: relative;
 }
 
-#
+@media(max-width: 700px){
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+}
