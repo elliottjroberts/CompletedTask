@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Kumbh Sans', sans-serif;
 }
 
 .nav-bar {
-    background: yellow;
+    background: white;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -25,20 +24,23 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
-    background: yellow;
+    background: white;
 }
 
 #logo {
     background-size: 100%;
+    color: black;
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
-.fa-gem {
-    margin-right: 05em;
+.fa-check-circle {
+    margin-right: 10px;
 }
 
 .nav-menu {
@@ -46,6 +48,8 @@
     align-items: center;
     list-style: none;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .nav-bar-items {
@@ -53,7 +57,7 @@
 }
 
 .nav-bar-links {
-    color: green;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,17 +85,18 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: red;
-    color: blue;
+    background: #6C63FF;
+    color: white;
 }
 
 .button:hover {
-    background: blue;
+    background: black;
     transition: all 0.3s ease;
+    text-decoration: #6C63FF;
 }
 
 .nav-bar-links:hover {
-    color: blue;
+    color: #6C63FF;
     transition: all 0.3s ease;
 }
 
@@ -198,35 +203,34 @@
     }
 }
 
-    .main {
-        background-color: brown;
-    }
-
     .main-container {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background-color: teal;
-        margin: 0 auto;
+        background-color: white;
+        margin: 0;
         height: 100vh;
-        z-index: 1;
         width: 100%
+        
     }
 
     .main-container h1 {
         font-size: 6rem;
+        font-family: 'Bitter', serif;
     }
 
     .main-container h2 {
         font-size: 2rem;
-        color: white;
+        color: #6C63FF;
         background-size: 100%;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .main-content p {
         margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 700;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .sec-button {
@@ -239,13 +243,15 @@
         position: relative;
         transition: all 0.3s;
         outline: none;
+        background-color: #6C63FF;
+
     }
 
     .sec-button a {
         position: relative;
         z-index: 2;
         text-decoration: none;
-        color: green;
+        color: white;
     }
 
     .sec-button:after {
@@ -325,6 +331,26 @@
         padding: 12px 36px;
         margin: 2.5rem 0;
     }
+}
+
+/* Testimonal */
+
+.testimonal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6C63FF;
+    padding: 100px;
+}
+
+.testimonal h1 {
+    font-family: 'Bitter', serif;
+    font-size: 4rem;
+}
+
+.testimonal p {
+    font-family: 'open-sans', serif;
+    font-size: 2rem;
 }
 
 /* services */ 
