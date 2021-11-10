@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Bitter', serif;
+}
+
+h2 { 
+    font-family: 'Bitter', serif;
+}
+
 .nav-bar {
     background: white;
     height: 80px;
@@ -266,7 +279,7 @@
     }
 
     .sec-button:hover {
-        background-color: blue;
+        background-color: black;
     }
 
     #main-img {
@@ -278,15 +291,9 @@
     @media (max-width: 1100px) {
         .main-container {
             display: flex;
-            justify-content: space-around;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
             margin: 0 auto;
-            height: 90vh;
-        }
-
-        .main-content {
-            margin-bottom: 1vh;
         }
 
         .main-content h1{
@@ -305,6 +312,7 @@
 
         .main-img-container {
             text-align: center;
+            margin-top: 40px;
         }
 
         #main-img {
@@ -337,15 +345,15 @@
 
 .testimonal {
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: #6C63FF;
     padding: 100px;
+    text-align: center;
 }
 
-.testimonal h1 {
+.testimonal h2 {
     font-family: 'Bitter', serif;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .testimonal p {
@@ -353,52 +361,60 @@
     font-size: 2rem;
 }
 
-/* services */ 
-.services {
-    background-color: tomato;
-    margin: 0;
-    text-align: center;
-}
-.services h1 {
-    font-size: 4rem;
-}
+/* photo */
 
-.services p {
-    font-size: 1.5em;
-    color: white;
-}
-
-.row {
+.photo-container {
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.photo-content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: tomato;
 }
 
-.service-card {
-    padding: 40px;
-    text-align: center;
-}
-.service-card img {
-    width: 300px;
-    height: 500px;
+.img-container img {
+    height: 400px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-@media (max-width: 1100px) {
-    .row {
+.photo-content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.photo-content li {
+    list-style-type: circle;
+    height: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 700px) {
+    .photo-section {
         display: flex;
-        flex-direction: column;
+        text-align: center;
     }
 }
 
+/* footer */
+
 .footer {
-    background-color: blue;
+    background-color: #6C63FF;
     margin: 0;
     padding: 30px;
     text-align: center;
 }
 
 .footer h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .icons .fab {
@@ -406,4 +422,5 @@
     font-size: 1.5rem;
     margin: 0 5px;
     margin-top: 10px;
+    cursor: pointer;
 }
