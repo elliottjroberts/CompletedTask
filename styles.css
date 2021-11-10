@@ -397,9 +397,18 @@ h2 {
 /* mobile */
 
 @media only screen and (max-width: 700px) {
-    .photo-section {
-        display: flex;
-        text-align: center;
+    .photo-container {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .photo-content {
+        margin: 50px;
+        margin-top: 20px;
+    }
+
+    .img-container img {
+    
     }
 }
 
