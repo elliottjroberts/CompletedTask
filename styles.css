@@ -135,11 +135,10 @@ h2 {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: black;
     }
 
     .nav-menu.active {
-        background: black;
+        background: white;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -157,7 +156,7 @@ h2 {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: white;
+        background: black;
     }
 
     .nav-bar-items {
@@ -368,8 +367,8 @@ h2 {
     flex-direction: row-reverse;
     justify-content: space-around;
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .photo-content {
@@ -396,22 +395,31 @@ h2 {
 
 /* mobile */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
     .photo-container {
+        display: flex;
         flex-direction: column;
-        margin: 50px 0;
     }
 
     .photo-content {
-        margin: 50px;
-        margin-top: 20px;
+        display: flex;
+        align-items: center;
     }
 
-    .img-container img {
-    
+    .img-container {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .img-container img {
+        height: 280px;
+    }
+}
 /* footer */
 
 .footer {
