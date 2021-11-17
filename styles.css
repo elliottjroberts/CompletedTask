@@ -446,8 +446,8 @@ h2 {
 
 .about-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    align-content: space-between;
     padding: 60px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -459,7 +459,7 @@ h2 {
 }
 
 #about-img {
-    height: 250px;
+    height: 400px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -473,8 +473,8 @@ h2 {
         align-items: center;
     }
 
-    .about-text h1 {
-        text-align: center;
+    .about-title h1 {
+        background-color: green;
     }
 
     #about-img {
