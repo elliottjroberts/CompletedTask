@@ -466,15 +466,7 @@ h2 {
     .about-container {
         display: flex;
         flex-direction: column-reverse;
-    }
-
-    .about-text {
-        display: flex;
-        align-items: center;
-    }
-
-    .about-title h1 {
-        background-color: green;
+        text-align: center;
     }
 
     #about-img {
